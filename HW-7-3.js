@@ -6,19 +6,25 @@ class Button {
     this.color = color;
     this.props = [width, height, type, color];
   }
-  onClick() {}
-  testButton() {
-    console.log(this.props.length());
+  onClick() {
+    //testButton() {
+    //console.log(this.props.length());
+    console.log(this.props);
   }
 }
-let newButton = new Button(38, 38, "button", "green");
-newButton.onClick();
-let tButton = new Button(25, 25, "button", "red");
+let GreenSmlButton = new Button(3, 5);
+GreenSmlButton.onClick();
 
-for (let i = 0; i > this.props.length; i++) {
-  console.log(`ok1`);
-}
+let RedMediumButton = new Button(4, 6, "button", "red");
+RedMediumButton.onClick();
 
-console.log(tButton.onClick());
+//let newButton = new Button(38, 38, "button", "green");
+//newButton.onClick();
+//let tButton = new Button(25, 25, "button", "red");
 
-console.log(tButton.testButton());
+//for (let i = 0; i > this.props.length; i++) {
+//console.log(`ok1`);
+
+//console.log(tButton.onClick());
+
+//console.log(tButton.testButton());

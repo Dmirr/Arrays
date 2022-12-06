@@ -20,9 +20,14 @@ const players = [
     scorePoints: 2356,
   },
 ];
-let MaxScorePoint = 0;
-for (let player of players) {
-  MaxScorePoint = Math.max(MaxScorePoint, player.scorePoints);
+
+//let MaxScorePoint;
+function findMaxScorePoint(players) {
+  let scoreArray = [];
+  for (let player of players) {
+    scoreArray.push(player.scorePoints);
+    //MaxScorePoint = Math.max(MaxScorePoint, player.scorePoints);
+  }
+  return Math.max(...scoreArray);
 }
-console.log(MaxScorePoint);
-console.log(players[0]);
+console.log(findMaxScorePoint(players));
