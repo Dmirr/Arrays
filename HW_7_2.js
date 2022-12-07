@@ -21,13 +21,15 @@ const players = [
   },
 ];
 
-//let MaxScorePoint;
-function findMaxScorePoint(players) {
-  let scoreArray = [];
-  for (let player of players) {
-    scoreArray.push(player.scorePoints);
-    //MaxScorePoint = Math.max(MaxScorePoint, player.scorePoints);
-  }
-  return Math.max(...scoreArray);
+let MaxScorePoint = 0;
+//function findMaxScorePoint(players) {
+//let scoreArray = [];
+for (let player of players) {
+  //scoreArray.push(player.scorePoints);
+  MaxScorePoint = Math.max(MaxScorePoint, player.scorePoints);
 }
-console.log(findMaxScorePoint(players));
+//return Math.max(...scoreArray);
+//}
+//console.log(findMaxScorePoint(players));
+console.log(MaxScorePoint);
+console.log(players[0]);
